@@ -1,0 +1,64 @@
+.registration {
+    background: #FFFFF0;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registration:hover {
+    background: #cccccc;
+}
+
+#window {
+    width: 350px;
+    height: 530px;
+    margin: 40px auto;
+    background: #FFFFF0;
+    border: 1px solid #FFFFF0;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.form {
+    width: 275px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    position: relative;
+    top: auto;
+}
+
+.input {
+    width: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+.close {
+    margin: 0 10px 0 300px;
+    background-color: #FFFFF0;
+    width: 25px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: #cccccc;
+}
+
+#gray {
+    background: #cccccc;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+}

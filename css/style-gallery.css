@@ -1,0 +1,203 @@
+@import "style-nav.css";
+
+.row-one-images  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.row-two-images  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.row-three-images  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.section-gallery {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 1.5fr;
+    grid-template-areas:    ". row-one-images ."
+                            ". row-one-images-title ."
+                            ". row-two-images ."
+                            ". row-two-images-title ."
+                            ". row-three-images ."
+                            ". row-three-images-title .";
+}
+
+.row-one-images {
+    grid-area: row-one-images;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "gallery-images-one gallery-images-two gallery-images-three";
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
+}
+
+.gallery-image-one {
+    grid-area: gallery-images-one;
+}
+
+.gallery-image-two {
+    grid-area: gallery-images-two;
+}
+
+.gallery-image-three {
+    grid-area: gallery-images-three;
+}
+
+.row-one-images-title {
+    grid-area: row-one-images-title;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 30px;
+    grid-template-areas: "images-title-one images-title-two images-title-three";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+
+}
+
+.images-title-one {
+    grid-area: images-title-one;
+}
+
+.images-title-two {
+    grid-area: images-title-two;
+}
+
+.images-title-three {
+    grid-area: images-title-three;
+}
+
+.row-two-images {
+    grid-area: row-two-images;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "gallery-images-four gallery-images-five gallery-images-six";
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
+}
+
+.gallery-image-four {
+    grid-area: gallery-images-four;
+}
+
+.gallery-image-five {
+    grid-area: gallery-images-five;
+}
+
+.gallery-image-six {
+    grid-area: gallery-images-six;
+}
+
+.row-two-images-title {
+    grid-area: row-two-images-title;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 30px;
+    grid-template-areas: "images-title-four images-title-five images-title-six";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+
+}
+
+.images-title-four {
+    grid-area: images-title-four;
+}
+
+.images-title-five {
+    grid-area: images-title-five;
+}
+
+.images-title-six {
+    grid-area: images-title-six;
+}
+
+.row-three-images {
+    grid-area: row-three-images;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "gallery-images-seven gallery-images-eight gallery-images-nine";
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
+}
+
+.gallery-image-seven {
+    grid-area: gallery-images-seven;
+}
+
+.gallery-image-eight {
+    grid-area: gallery-images-eight;
+}
+
+.gallery-image-nine {
+    grid-area: gallery-images-nine;
+}
+
+.row-three-images-title {
+    grid-area: row-three-images-title;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 30px;
+    grid-template-areas: "images-title-seven images-title-eight images-title-nine";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+
+}
+
+.images-title-seven {
+    grid-area: images-title-seven;
+}
+
+.images-title-eight {
+    grid-area: images-title-eight;
+}
+
+.images-title-nine {
+    grid-area: images-title-nine;
+}
+
+.subtitle {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #738a94;
+    line-height: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.gallery-image-one:hover,
+.gallery-image-two:hover,
+.gallery-image-three:hover,
+.gallery-image-four:hover,
+.gallery-image-five:hover,
+.gallery-image-six:hover,
+.gallery-image-seven:hover,
+.gallery-image-eight:hover,
+.gallery-image-nine:hover {
+    background-color: #999999;
+    opacity: 0.5;
+    transition: opacity .6s linear;
+}
+
+

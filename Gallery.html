@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-gallery.css">
+    <link rel="stylesheet" href="css/style-reg.css">
+    <title>Gallery</title>
+</head>
+<body>
+<header class="header">
+    <a href="Home.html" class="header-logo">
+        <img src="images/logo.jpg" alt="Logo">
+    </a>
+    <nav class="header-nav">
+        <a href="About.html" class="header-nav_link">О нас</a>
+        <a href="Life%20studio.html" class="header-nav_link">Студия</a>
+        <a href="Gallery.html" class="header-nav_link">Галерея</a>
+        <a href="#" class="header-nav_link">Магазин</a>
+        <a href="#" class="header-nav_link">Видео</a>
+        <a href="Blogs-correct.html" class="header-nav_link">Блог(полезное)</a>
+        <a href="Contacts.html" class="header-nav_link">Контакты</a>
+    </nav>
+    <div class="header-auth">
+        <a  href="#" class="header-login_link">Вход</a>
+        <a  onclick="show('block')" href="#" class="header-registration_link">Регистрация</a>
+    </div>
+    <div class="header-welcome-text">
+        <h1 class="header-title">
+            Галлерея студии "Викины куклы"
+        </h1>
+    </div>
+</header>
+
+
+<section class="section-gallery">
+    <div class="row-one-images">
+        <div class="gallery-image-one">
+            <img src="images/gallery-studio/photo-one.jpg" alt="photo-one">
+        </div>
+        <div class="gallery-image-two">
+            <img src="images/gallery-studio/photo-two.jpg" alt="photo-two">
+        </div>
+        <div class="gallery-image-three">
+            <img src="images/gallery-studio/photo-three.jpg" alt="photo-three">
+        </div>
+    </div>
+    <div class="row-one-images-title">
+        <div class="images-title-one">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+        <div class="images-title-two">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+        <div class="images-title-three">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+    </div>
+
+    <div class="row-two-images">
+        <div class="gallery-image-four">
+            <img src="images/gallery-studio/photo-four.jpg" alt="photo-four">
+        </div>
+        <div class="gallery-image-five">
+            <img src="images/gallery-studio/photo-five.jpg" alt="photo-five">
+        </div>
+        <div class="gallery-image-six">
+            <img src="images/gallery-studio/photo-six.jpg" alt="photo-six">
+        </div>
+    </div>
+    <div class="row-two-images-title">
+        <div class="images-title-four">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+        <div class="images-title-five">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+        <div class="images-title-six">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+    </div>
+
+    <div class="row-three-images">
+        <div class="gallery-image-seven">
+            <img src="images/gallery-studio/photo-seven.jpg" alt="photo-seven">
+        </div>
+        <div class="gallery-image-eight">
+            <img src="images/gallery-studio/photo-eight.jpg" alt="photo-eight">
+        </div>
+        <div class="gallery-image-nine">
+            <img src="images/gallery-studio/photo-nine.jpg" alt="photo-nine">
+        </div>
+    </div>
+    <div class="row-three-images-title">
+        <div class="images-title-seven">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+        <div class="images-title-eight">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+        <div class="images-title-nine">
+            <span class="title">Название фото</span>
+            <br>
+            <span class="subtitle">Небольшое описание фото</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-----------------форма регистрации------------------------------------->
+<div onclick="show('none')" id="gray"></div>
+<div id="window">
+    <img onclick="show('none')" src="./images/close.png" alt="" class="close">
+    <div class="form">
+        <h2>Регистрация</h2>
+        <form action="Home.html" name="reg">
+            <input type="text" placeholder="Имя" name="name1" class="input">
+            <input type="text" placeholder="Фамилия" name="name2" class="input">
+            <input type="email" placeholder="Email" name="email1" class="input">
+            <input type="email" placeholder="Подтвердите адрес электронной почты"
+                   name="email2" class="input">
+            <input type="password" placeholder="Пароль" name="pass1" class="input">
+            <input type="password" placeholder="Подтвердите пароль"
+                   name="pass2" class="input">
+            <input type="tel" placeholder="Мобильный телефон" name="tel" class="input" >
+            <input type="submit" value="Регистрация" name="sub" class="input">
+            Нажимая кнопку регистрации, вы подтверждаете, что прочитали и согласны с нашими Условиями
+            Пользования и Политикой Конфиденциальности
+        </form>
+    </div>
+</div>
+<!------------------------------------------------------------------------>
+<script
+        type="text/javascript"
+        src="https://spikmi.com/Widget?Id=739">
+</script>
+
+<script>
+
+    function show(status)
+    {
+        document.getElementById('window').style.display = status;
+        document.getElementById('gray').style.display = status;
+    }
+</script>
+</body>
+</html>

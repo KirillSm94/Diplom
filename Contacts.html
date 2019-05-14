@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-contacts.css">
+    <link rel="stylesheet" href="css/style-reg.css">
+    <title>Contacts</title>
+</head>
+<body>
+<header class="header">
+    <a href="Home.html" class="header-logo">
+        <img src="images/logo.jpg" alt="Logo">
+    </a>
+    <nav class="header-nav">
+        <a href="About.html" class="header-nav_link">О нас</a>
+        <a href="Life%20studio.html" class="header-nav_link">Студия</a>
+        <a href="Gallery.html" class="header-nav_link">Галерея</a>
+        <a href="#" class="header-nav_link">Магазин</a>
+        <a href="#" class="header-nav_link">Видео</a>
+        <a href="Blogs-correct.html" class="header-nav_link">Блог(полезное)</a>
+        <a href="Contacts.html" class="header-nav_link">Контакты</a>
+    </nav>
+    <div class="header-auth">
+        <a  href="#" class="header-login_link">Вход</a>
+        <a  onclick="show('block')" href="#" class="header-registration_link">Регистрация</a>
+    </div>
+    <div class="header-welcome-text">
+        <div class="header-title">
+            Контакты
+        </div>
+    </div>
+</header>
+
+<section class="section-contacts">
+    <div class="row-one">
+        <div class="social-title">
+            МЫ В СОЦСЕТЯХ
+        </div>
+    </div>
+    <div class="row-two">
+        <div class="email-and-number">
+            <span class="text">Телефон: +7-(777)-999-99-99</span>
+            <br>
+            <br>
+            <span class="text">E-mail: qwe@gmail.com</span>
+        </div>
+        <div class="social-url">
+            <div class="social-vk">
+                <a href="vk.com"><img src="images/vk-64x64.png" alt="vk"></a>
+                <br>
+                <a href="vk.com">Вконтакте</a>
+            </div>
+            <div class="social-inst">
+                <a href="instagram.com"><img src="images/instagram-64x64.png" alt="insta"></a>
+                <br>
+                <a href="instagram.com">Инстаграм</a>
+            </div>
+            <div class="social-face">
+                <a href="facebook.com"><img src="images/FaceBook_512x512-64x64.png" alt="face"></a>
+                <br>
+                <a href="facebook.com">Фэйсбук</a>
+            </div>
+        </div>
+    </div>
+    <div class="row-three">
+        <div class="contacts-map">
+            <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.5790147603466!2d78.38502411537156!3d45.01317027909821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x427eff4f0b02846b%3A0x14edd8ce1b705b67!2z0J_Qu9Cw0YHRgtC40LvQuNC90L7QstCw0Y8g0YHRgtGD0LTQuNGPINCS0LjQutC40L3RiyDQutGD0LrQu9GL!5e0!3m2!1sru!2sru!4v1557677762189!5m2!1sru!2sru"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-----------------форма регистрации------------------------------------->
+<div onclick="show('none')" id="gray"></div>
+<div id="window">
+    <img onclick="show('none')" src="./images/close.png" alt="" class="close">
+    <div class="form">
+        <h2>Регистрация</h2>
+        <form action="Home.html" name="reg">
+            <input type="text" placeholder="Имя" name="name1" class="input">
+            <input type="text" placeholder="Фамилия" name="name2" class="input">
+            <input type="email" placeholder="Email" name="email1" class="input">
+            <input type="email" placeholder="Подтвердите адрес электронной почты"
+                   name="email2" class="input">
+            <input type="password" placeholder="Пароль" name="pass1" class="input">
+            <input type="password" placeholder="Подтвердите пароль"
+                   name="pass2" class="input">
+            <input type="tel" placeholder="Мобильный телефон" name="tel" class="input" >
+            <input type="submit" value="Регистрация" name="sub" class="input">
+            Нажимая кнопку регистрации, вы подтверждаете, что прочитали и согласны с нашими Условиями
+            Пользования и Политикой Конфиденциальности
+        </form>
+    </div>
+</div>
+<!------------------------------------------------------------------------>
+</body>
+<script
+        type="text/javascript"
+        src="https://spikmi.com/Widget?Id=739">
+</script>
+
+<script>
+
+    function show(status)
+    {
+        document.getElementById('window').style.display = status;
+        document.getElementById('gray').style.display = status;
+    }
+</script>
+</html>

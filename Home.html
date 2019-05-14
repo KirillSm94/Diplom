@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-reg.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <a href="Home.html" class="header-logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </a>
+        <nav class="header-nav">
+            <a href="About.html" class="header-nav_link">О нас</a>
+            <a href="Life%20studio.html" class="header-nav_link">Студия</a>
+            <a href="Gallery.html" class="header-nav_link">Галерея</a>
+            <a href="#" class="header-nav_link">Магазин</a>
+            <a href="#" class="header-nav_link">Видео</a>
+            <a href="Blogs-correct.html" class="header-nav_link">Блог(полезное)</a>
+            <a href="Contacts.html" class="header-nav_link">Контакты</a>
+        </nav>
+        <div class="header-auth">
+            <a  href="#" class="header-login_link">Вход</a>
+            <a  onclick="show('block')" href="#" class="header-registration_link">Регистрация</a>
+        </div>
+        <div class="header-welcome-text">
+           <h1 class="header-title">
+               Пластилиновая студия "Викины куклы"
+           </h1>
+            <span class="header-subtitle">
+                Добро пожаловать в пластилиновую студию
+            </span>
+        </div>
+    </header>
+
+    <section id="gal" class="gallery-section gallery-section-small">
+        <div class="gallery-photo-one">
+            <img src="images/gallery-photo/photo-one.jpg" alt="photo-one" class="gallery-photo">
+        </div>
+        <div class="gallery-photo-second">
+            <img src="images/gallery-photo/photo-second.jpg" alt="photo-second" class="gallery-photo">
+        </div>
+        <div class="gallery-photo-third">
+            <img src="images/gallery-photo/photo-third.jpg" alt="photo-third" class="gallery-photo">
+        </div>
+
+        <div class="gallery-photo-third-small">
+            <img src="images/gallery-photo/photo-third-small.jpg" alt="photo-third" class="gallery-photo">
+        </div>
+
+        <div class="gallery-photo-four">
+            <img src="images/gallery-photo/photo-four.jpg" alt="photo-four" class="gallery-photo">
+        </div>
+        <div class="gallery-photo-five">
+            <img src="images/gallery-photo/photo-five.jpg" alt="photo-five" class="gallery-photo">
+        </div>
+
+        <div class="gallery-photo-five-small">
+            <img src="images/gallery-photo/photo-five-small.jpg" alt="photo-five" class="gallery-photo">
+        </div>
+
+
+        <div class="gallery-photo-six">
+            <img src="images/gallery-photo/photo-six.jpg" alt="photo-six" class="gallery-photo">
+        </div>
+        <div class="gallery-photo-seven">
+            <img src="images/gallery-photo/photo-seven.jpg" alt="photo-seven" class="gallery-photo">
+        </div>
+        <div class="gallery-photo-eight">
+            <img src="images/gallery-photo/photo-eight.jpg" alt="photo-eight" class="gallery-photo">
+        </div>
+        <div class="gallery-photo-nine">
+            <img src="images/gallery-photo/photo-nine.jpg" alt="photo-nine" class="gallery-photo">
+        </div>
+        <!--------------отзывы----------------------------------------------------------->
+        <section class="reviews-section">
+            <div class="header-reviews">
+                <span class="header-subtitle"> Отзывы наших дорогих посетителей</span>
+            </div>
+            <div class="reviews-images">
+                <img src="images/reviews-photo/reviews-one.jpg" alt="review-one" class="review-one">
+                <img src="images/reviews-photo/reviews-two.jpg" alt="review-two" class="review-two">
+                <img src="images/reviews-photo/reviews-three.jpg" alt="review-three" class="review-three">
+                <img src="images/reviews-photo/reviews-four.jpg" alt="review-four" class="review-four">
+                <img src="images/reviews-photo/reviews-five.jpg" alt="review-five" class="review-five">
+                <img src="images/reviews-photo/reviews-six.jpg" alt="review-six" class="review-six">
+                <img src="images/reviews-photo/reviews-seven.jpg" alt="review-seven" class="review-seven">
+                <img src="images/reviews-photo/reviews-eight.jpg" alt="review-eight" class="review-eight">
+                <img src="images/reviews-photo/reviews-nine.jpg" alt="review-nine" class="review-nine">
+                <img src="images/reviews-photo/reviews-ten.jpg" alt="review-ten" class="review-ten">
+                <img src="images/reviews-photo/reviews-eleven.jpg" alt="review-eleven" class="review-eleven">
+                <img src="images/reviews-photo/reviews-twelve.jpg" alt="review-twelve" class="review-twelve">
+                <img src="images/reviews-photo/reviews-thirteen.jpg" alt="review-thirteen" class="review-thirteen">
+                <img src="images/reviews-photo/reviews-fourteen.jpg" alt="review-fourteen" class="review-fourteen">
+                <img src="images/reviews-photo/reviews-fifteen.jpg" alt="review-fifteen" class="review-fifteen">
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+<!-----------------форма регистрации------------------------------------->
+    <div onclick="show('none')" id="gray"></div>
+    <div id="window">
+        <img onclick="show('none')" src="./images/close.png" alt="" class="close">
+        <div class="form">
+            <h2>Регистрация</h2>
+            <form action="Home.html" name="reg">
+                <input type="text" placeholder="Имя" name="name1" class="input">
+                <input type="text" placeholder="Фамилия" name="name2" class="input">
+                <input type="email" placeholder="Email" name="email1" class="input">
+                <input type="email" placeholder="Подтвердите адрес электронной почты"
+                       name="email2" class="input">
+                <input type="password" placeholder="Пароль" name="pass1" class="input">
+                <input type="password" placeholder="Подтвердите пароль"
+                       name="pass2" class="input">
+                <input type="tel" placeholder="Мобильный телефон" name="tel" class="input" >
+                <input type="submit" value="Регистрация" name="sub" class="input">
+                Нажимая кнопку регистрации, вы подтверждаете, что прочитали и согласны с нашими Условиями
+                Пользования и Политикой Конфиденциальности
+            </form>
+        </div>
+    </div>
+<!------------------------------------------------------------------------>
+</body>
+
+<script
+        type="text/javascript"
+        src="https://spikmi.com/Widget?Id=739">
+</script>
+
+<script>
+
+    function show(status)
+    {
+        document.getElementById('window').style.display = status;
+        document.getElementById('gray').style.display = status;
+    }
+</script>
+
+<script src="js/reviews.js"></script>
+<!--<script src="js/gallery.js"></script>-->
+
+</html>

@@ -1,0 +1,81 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #FFFFF0;
+}
+
+
+/*-----------------------header grid------------------------------------*/
+.header {
+    display: grid; /*объявляем тип разметки grid*/
+    grid-template-columns: 1.5fr 5fr 2fr; /* задаем три колонки с размерами*/
+    grid-template-areas: /*объявляем имена областей */
+            "header-logo header-nav header-auth"
+            ". header-welcome-text .";
+    grid-template-rows: 2fr 1.5fr; /*задаем две строки с размерами*/
+    min-height: 200px;
+    align-items: center; /*отцентровка по высоте*/
+    grid-column-gap: 10px; /*размер линии сетки, а именнно линии столбца*/
+    font-size: 18px;
+}
+
+.header img {
+    width: 200px;
+    height: auto;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000;
+}
+.header-logo {
+    grid-area: header-logo;
+    justify-self: center; /*отцентровка содержимого дочернего элемента сетки
+                            по ширине в пределах своей ячейки*/
+
+}
+
+.header-nav {
+    grid-area: header-nav;
+    justify-self: center;
+}
+
+.header-auth {
+    grid-area: header-auth;
+    justify-self: center;
+}
+
+.header-welcome-text {
+    grid-area: header-welcome-text;
+    align-self: start;
+    justify-self: center;
+}
+
+
+.header-subtitle {
+    display: grid; /*один из способов отцентровки "дочки"*/
+    grid-template-columns: auto; /*создал столбец с шириной h1*/
+    justify-items: center; /*выровнял по горизонтали относительно h1 =)
+                                возможно есть еще варианты,
+                                но пока выкрутился только так*/
+}
+
+.header-nav_link { /*задаем отступы межды элементами меню*/
+    margin-right: 20px;
+}
+
+.header-nav_link:last-child  { /*отменяем отступ у последнего элемента меню*/
+    margin-right: 0;
+}
+
+.header-login_link  {
+    margin-right: 20px; /*задаем отступы межды элементами меню*/
+}
+
+.header-registration_link {
+    margin-right: 0;
+}

@@ -1,0 +1,297 @@
+@import "style-nav.css";
+
+.section-about {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". section-about-one .";
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.section-about-one {
+    grid-area: section-about-one;
+    display: grid;
+    grid-template-columns: minmax(400px, 720px) 1fr;
+    grid-template-areas: "card-image-one article-one";
+    grid-template-rows: 400px;
+}
+
+.article-one {
+    grid-area: article-one;
+
+    padding: 30px 40px 0;
+}
+
+.card-image {
+    grid-area: card-image-one;
+}
+
+.card-image-one {
+    background-image: url("../images/about-photo/about-photo-one-small.jpg");
+    width:720px;
+    height: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-span {
+    display: block;
+    margin: 10px 0 10px;
+    color: #738a94;
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.card-title {
+    margin: 10px 0 10px;
+    font-size: 30px;
+}
+
+.card-information p {
+    display: block;
+    font-family: Gabriola;
+    font-size: 25px;
+    line-height: 20px;
+    margin: 5px;
+    padding: 0;
+}
+
+.section-about-two-three-four {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". section-row-two .";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-row-two {
+    grid-area: section-row-two;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "about-two about-three about-four";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.about-two {
+    grid-area: about-two;
+}
+
+.about-three {
+    grid-area: about-three;
+}
+
+.about-four {
+    grid-area: about-four;
+}
+
+.card-image-two {
+    background-image: url("../images/about-photo/about-photo-two.jpg");
+    width:300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-image-three {
+    background-image: url("../images/about-photo/about-photo-three.jpg");
+    width:300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-image-four {
+    background-image: url("../images/about-photo/about-photo-four.jpg");
+    width:300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.section-about-five-six {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". section-row-three .";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-row-three {
+    grid-area: section-row-three;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "about-five about-six";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.about-five {
+    grid-area: about-five;
+}
+
+.about-six {
+    grid-area: about-six;
+}
+
+.card-image-five {
+    background-image: url("../images/about-photo/about-photo-five.jpg");
+    width:500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-image-six {
+    background-image: url("../images/about-photo/about-photo-six.jpg");
+    width:500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+/*---------------------------сетка для новых статей-------------------*/
+
+.section-about-four {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". section-row-four .";
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.section-row-four {
+    grid-area: section-row-four;
+    display: grid;
+    grid-template-columns: minmax(400px, 720px) 1fr;
+    grid-template-areas: "card-image-seven article-four";
+    grid-template-rows: 400px;
+}
+
+.article-four {
+    grid-area: article-four;
+
+    padding: 30px 40px 0;
+}
+
+.card-image-seven {
+    grid-area: card-image-seven;
+}
+
+.card-image-seven {
+    background-image: url("../images/about-photo/about-photo-one-small.jpg");
+    width:720px;
+    height: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+
+.section-about-eight-nine-ten {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". section-row-five .";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-row-five {
+    grid-area: section-row-five;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "about-eight about-nine about-ten";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.about-eight {
+    grid-area: about-eight;
+}
+
+.about-nine {
+    grid-area: about-nine;
+}
+
+.about-ten {
+    grid-area: about-ten;
+}
+
+.card-image-eight {
+    background-image: url("../images/about-photo/about-photo-two.jpg");
+    width:300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-image-nine {
+    background-image: url("../images/about-photo/about-photo-three.jpg");
+    width:300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-image-ten {
+    background-image: url("../images/about-photo/about-photo-four.jpg");
+    width:300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.section-about-eleven-twelve {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". section-row-six .";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-row-six {
+    grid-area: section-row-six;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "about-eleven about-twelve";
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.about-eleven {
+    grid-area: about-eleven;
+}
+
+.about-twelve {
+    grid-area: about-twelve;
+}
+
+.card-image-eleven {
+    background-image: url("../images/about-photo/about-photo-five.jpg");
+    width:500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card-image-twelve {
+    background-image: url("../images/about-photo/about-photo-six.jpg");
+    width:500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+

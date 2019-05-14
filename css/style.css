@@ -1,0 +1,300 @@
+@import "style-nav.css";
+/*-----------------------gallery section grid------------------------------------*/
+
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) 4fr;
+    grid-template-rows: repeat(6, 1fr) 0.5fr;
+    grid-gap: 5px;
+
+
+}
+
+.gallery-photo-one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-left: 10px;
+}
+
+
+.gallery-photo-second {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+
+.gallery-photo-third {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    margin-left: 10px;
+}
+
+.gallery-photo-four {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gallery-photo-five {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.gallery-photo-six {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery-photo-seven {
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery-photo-eight {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gallery-photo-nine {
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gallery-photo-third-small {
+    display: none;
+}
+
+.gallery-photo-five-small {
+    display: none;
+}
+
+.gallery-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/ /* возможно даже не нужно, посмотрим дальше*/
+}
+
+.gallery-photo-one:hover,
+.gallery-photo-second:hover,
+.gallery-photo-third:hover,
+.gallery-photo-four:hover,
+.gallery-photo-five:hover,
+.gallery-photo-six:hover,
+.gallery-photo-seven:hover,
+.gallery-photo-eight:hover,
+.gallery-photo-nine:hover {
+    background-color: #999999;
+    opacity: 0.5;
+    transition: opacity .6s linear
+}
+/*-----------------------reviews-------------------------------------------------------*/
+
+.reviews-section {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    display: grid;
+    grid-template-rows: .5fr 4fr;
+    grid-template-columns: 1fr;
+}
+
+.reviews-images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: 35px;
+}
+
+.review-one {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-two {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-three {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-four {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-five {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-six {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-seven {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-eight {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-nine {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-ten {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-eleven {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-twelve {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+    top: 3750px;
+}
+
+.review-thirteen {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-fourteen {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+.review-fifteen {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 375px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .gallery-section-small {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 5px;
+    }
+
+    .gallery-photo-one, .gallery-photo-six, .gallery-photo-seven, .gallery-photo-eight, .reviews-section {
+        display: none;
+    }
+
+    .gallery-photo-third-small {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .gallery-photo-five-small {
+        display: block;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+
+    }
+
+    .gallery-photo-nine {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .gallery-photo-four {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+
+    .gallery-photo-second {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+
+    .gallery-photo-third {
+        display: none;
+    }
+
+    .gallery-photo-five{
+        display: none;
+    }
+    
+    .reviews-section {
+        display: none;
+    }
+}

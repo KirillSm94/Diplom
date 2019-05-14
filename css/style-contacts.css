@@ -1,0 +1,99 @@
+@import "style-nav.css";
+
+@font-face {
+    font-family: 'Lora';
+    font-weight: 400;
+    src: url('../fonts/Lora.woff') format('woff');
+}
+
+.header-welcome-text {
+    align-self: end;
+    justify-self: start;
+}
+
+.header-title {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.section-contacts {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 1.5fr;
+    grid-template-rows: 1fr 0.5fr 1fr 0.8fr 300px 0.5fr;
+    grid-template-areas: ". row-one ."
+                         ". . ."
+                         ". row-two ."
+                         ". . ."
+                         ". row-three ." ". . .";
+}
+
+.row-one {
+    grid-area: row-one;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". social-title";
+}
+
+.social-title {
+    grid-area: social-title;
+    align-self: end;
+    justify-self: start;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.row-two {
+    grid-area: row-two;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "email-and-number social-url";
+}
+
+.emailAndNumber {
+    grid-area: email-and-number;
+}
+
+.text {
+    color: #999999;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+}
+
+.social-url {
+    grid-area: social-url;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas: ". social-vk social-inst social-face";
+}
+
+.social-url a {
+    text-decoration: none;
+    color: #8a8ac5;
+    transition: all .3s linear;
+}
+.social-url a:hover {
+    color: burlywood;
+}
+.social-vk {
+    grid-area: social-vk;
+}
+
+.social-inst {
+    grid-area: social-inst;
+}
+
+.social-face {
+    grid-area: social-face;
+}
+
+.row-three {
+    grid-area: row-three;
+}
+
+.contacts-map {
+    border: 0;
+    width: 100%;
+    height: 300px;
+}
